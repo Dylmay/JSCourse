@@ -185,7 +185,7 @@ function formatWithPadding(formatNum, str, padSize) {
 function isPalindrome(str) {
   if (str.length <= 1) return true;
 
-  str = str.replaceAll(' ', '').toLowerCase();
+  str = str.replace(/ /g, '').toLowerCase();
   return str === str.reverse();
 }
 
