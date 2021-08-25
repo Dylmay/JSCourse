@@ -19,8 +19,9 @@ const game = {
     const secretNum = Math.floor(Math.random() *
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum;
 
+    let curGuess = NaN;
     do {
-      const curGuess = this.getGuess();
+      curGuess = this.getGuess();
 
       this.render(curGuess, secretNum);
       this.prevGuesses.push(curGuess);
@@ -33,7 +34,7 @@ const game = {
    */
   getGuess() {
     return this.getInput(
-        `Enter a guess between ${this.smallestNum} & ${thi.biggestNum}`,
+        `Enter a guess between ${this.smallestNum} & ${this.biggestNum}`,
         50,
         (input) => {
           Number.isNaN(input) ||
@@ -84,7 +85,7 @@ const game = {
     } else {
       // no win
       alert(
-          `Your guess is too ${curGuess > secretNum ? 'High' : 'Low'}
+          `Your guess (${curGuess}) is too ${curGuess > secretNum ? 'High' : 'Low'}
           Previous Guesses: ${this.prevGuesses.join(', ')}`,
       );
     }
@@ -109,5 +110,3 @@ const game = {
 
 
 };
-
-game.play();

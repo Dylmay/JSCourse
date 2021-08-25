@@ -4,7 +4,7 @@
   "description": "Programs and Objects lab",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js"
+    "test": "echo 'No tests set' & exit 0"
   },
   "author": "Dylan Mayor",
   "license": "ISC",
