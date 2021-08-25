@@ -1,0 +1,15 @@
+{
+  "name": "programs_and_objects",
+  "version": "1.0.0",
+  "description": "Programs and Objects lab",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "Dylan Mayor",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
