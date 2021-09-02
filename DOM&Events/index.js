@@ -1,8 +1,6 @@
 /**
  * @file Logic for tic-tac-toe game
  * @author Dylan Mayor
- * TODO:
- *  theme/use styler
  */
 'use strict';
 
@@ -30,7 +28,7 @@ const WON = 'win';
 const CONTINUE = 'continue';
 
 // Symbols used in buttons
-const EMPTY_SYM = '_';
+const EMPTY_SYM = ' ';
 const P_ONE_SYM = 'X';
 const P_TWO_SYM = 'O';
 
