@@ -28,7 +28,7 @@ const WON = 'win';
 const CONTINUE = 'continue';
 
 // Symbols used in buttons
-const EMPTY_SYM = ' ';
+const EMPTY_SYM = '-';
 const P_ONE_SYM = 'X';
 const P_TWO_SYM = 'O';
 

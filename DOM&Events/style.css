@@ -29,10 +29,6 @@ body {
   padding-left: 15px;
 }
 
-.col-2 {
-  width: 50%;
-}
-
 .current_player {
   color: mediumblue;
 }
@@ -55,15 +51,14 @@ body {
 #ttt-board td:after, #ttt-board td:before {
   content: '';
   display: block;
-  padding-bottom: calc(50% - 0.5em);
 }
 
 #ttt-board button {
   width: 100%;
-  height: 100%;
+  height: 20vh;
   vertical-align: middle;
   border: none;
-  background-color: #6b6b89;
+  /*background-color: #6b6b89;*/
 }
 
 .col-3 {
@@ -78,4 +73,23 @@ body {
 #copyright {
   color: grey;
   font-size: 10px;
+}
+
+#options button {
+  height: 50px;
+}
+
+@media screen and (min-width: 1023px) {
+  .col-2 {
+    width: 33%;
+  }
+  .col-4 {
+    width: 33%;
+  }
+
+  #player-separator > h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
