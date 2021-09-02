@@ -49,7 +49,7 @@ function gridClick(event) {
   // check for winning conditions
   switch (hasWinner()) {
     case WON:
-      console.log('WE HAVE A WINNER!');
+      console.log(`WE HAVE A WINNER! Congrats player ${playerOnesTurn ? 'one' : 'two'}`);
       lockBoard();
       addPoint(playerOnesTurn);
       updatePlayerInfo();

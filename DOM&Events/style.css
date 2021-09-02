@@ -11,6 +11,10 @@ body {
   line-height: 150%;
 }
 
+body > div {
+  overflow-x: hidden;
+}
+
 .center_text {
   text-align: center;
 }
