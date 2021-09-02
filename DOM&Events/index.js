@@ -72,11 +72,11 @@ function setPlayer(isPlayerOne) {
   playerOnesTurn = isPlayerOne;
 
   if (playerOnesTurn) {
-    document.querySelector('#player-1 h2').classList.add('current_player');
-    document.querySelector('#player-2 h2').classList.remove('current_player');
+    document.querySelector('#player-1').classList.add('current_player');
+    document.querySelector('#player-2').classList.remove('current_player');
   } else {
-    document.querySelector('#player-2 h2').classList.add('current_player');
-    document.querySelector('#player-1 h2').classList.remove('current_player');
+    document.querySelector('#player-2').classList.add('current_player');
+    document.querySelector('#player-1').classList.remove('current_player');
   }
 }
 
@@ -98,6 +98,7 @@ function addPoint(isPlayerOne) {
 function lockBoard() {
   document.querySelectorAll('.game-square').forEach((square) => {
     square.disabled = true;
+    square.classList.add('disabled');
   });
 }
 
@@ -108,6 +109,7 @@ function clearBoard() {
   document.querySelectorAll('.game-square').forEach((square) => {
     square.disabled = false;
     square.innerText = EMPTY_SYM;
+    square.classList.remove('disabled');
   });
 }
 

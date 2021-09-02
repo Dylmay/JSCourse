@@ -29,8 +29,12 @@ body {
   padding-left: 15px;
 }
 
+.current_player > h2 {
+  color: rgb(20, 90, 14);
+}
+
 .current_player {
-  color: mediumblue;
+  background-color: grey;
 }
 
 #ttt-board {
@@ -53,13 +57,20 @@ body {
   display: block;
 }
 
+.disabled {
+   background-color: grey !important;
+   color: black !important;
+}
+
 #ttt-board button {
   width: 100%;
   height: 20vh;
   vertical-align: middle;
   border: none;
-  /*background-color: #6b6b89;*/
+  background-color: #27273a;
+  color: white;
 }
+
 
 .col-3 {
   width: 50%;
