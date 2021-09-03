@@ -44,6 +44,8 @@ function handleGifySubmit(event) {
       .then((response) => {
         if (response.status !== 200) {
           console.error(`Received error: ${response.statusText}`);
+
+          throw new Error(`BAD RESPONSE: ${response.status}`);
         }
 
         return response.json();
